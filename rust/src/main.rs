@@ -1,3 +1,4 @@
+mod task_1;
 fn main() {
-    println!("Hello, world!");
+    task_1::b::run();
 }
