@@ -1,7 +1,7 @@
 {
   "author": "kosciolek",
   "scripts": {
-    "dev": "ts-node-dev --clear --quiet --respawn"
+    "go": "ts-node-dev --clear --quiet --respawn run.ts"
   },
   "license": "MIT",
   "dependencies": {

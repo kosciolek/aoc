@@ -1,7 +1,5 @@
-import { solve } from "./solve";
-
-solve((input) => {
-  const numbers = input.split(/\n/).map((num) => parseInt(num, 10));
+export default (input) => {
+  const numbers = (input as string).split(/\n/).map((num) => parseInt(num, 10));
   const { increases } = numbers.reduce(
     ({ increases, prev }, curr) => ({
       increases: increases + Number(curr > prev && prev !== undefined),
@@ -10,4 +8,4 @@ solve((input) => {
     { increases: 0, prev: undefined }
   );
   return increases;
-});
+};
